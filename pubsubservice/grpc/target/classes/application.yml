@@ -1,0 +1,4 @@
+pubsub:
+  grpc:
+    host: localhost
+    port: 2180

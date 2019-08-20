@@ -1,0 +1,37 @@
+CocCoc DE Exam:
+Please implement simple PubSub system ( Please see here: https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern) 
+
+Your broker should follow arch:
+                                                                                                            
+                                                                             +---------------+    
+                                                                /----------- |   Client 2    |    
+                                                               /             +---------------+    
+                                                              /                                   
++----------+      pub mes      +--------------------------+   subs           +---------------+    
+| Client 1 |   <---------->    |       BROKER             | <----------->    |   Client 3    |    
++----------+   <your protocol> |                          |                  +---------------+    
+                               +--------------------------+ \                                     
+                                                             \               +---------------+    
+                                                              \-----------   |    Client 4   |    
+                                                                             +---------------+        
+
+
+Requirements: 
+  
+* JAVA > 1.8
+* BROKER can handle pub messages from Client 1, broadcasting them to [Client2,3,4]
+* Client 2,3, and 4 can connect/reconnect to BROKER
+* BROKER can handle massive messages from Client 1. 
+
+How we review your code: 
+- Java language
+- Design Pattern
+- Clean Code
+- Clear Ideas
+- High Through output
+- Avoid Mem Leak
+
+NOTE: DONT USE KAFKA ( or ActiveMQ), HERE WE DO IMPLEMENT THE BROKER BASED ON THEIR IDEA.
+  
+  
+

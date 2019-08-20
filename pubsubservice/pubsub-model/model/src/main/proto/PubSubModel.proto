@@ -1,0 +1,28 @@
+syntax = "proto3";
+//
+// Copyright (C) 2019 Topica Edtech Group.
+//
+
+package vn.coccoc.pubsub.model;
+
+message PubSubMessage {
+  string from = 1;
+  string topic = 2;
+  string content = 3;
+}
+
+message SubcribeContent {
+  string hostGrpc = 1;
+  string portGrpc = 2;
+  string topicName = 3;
+}
+
+message CommonResponse {
+  uint32 statusCode = 1;
+  string message = 2;
+}
+
+message CommonRequest {
+  string clientId = 1;
+  string requestType = 2;
+}

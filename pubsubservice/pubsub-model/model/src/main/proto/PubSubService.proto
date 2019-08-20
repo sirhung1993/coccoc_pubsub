@@ -1,0 +1,9 @@
+syntax = "proto3";
+option java_multiple_files = true;
+package vn.coccoc.pubsub.service;
+
+import "PubSubModel.proto";
+
+service GrpcPubSubService {
+  rpc subcribe (vn.coccoc.pubsub.model.SubcribeContent) returns (vn.coccoc.pubsub.model.CommonResponse);
+}
