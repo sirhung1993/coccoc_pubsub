@@ -45,7 +45,7 @@ cd $PUB_SUB_HOME/client
   mvn exec:java -Dexec.mainClass="vn.coccoc.hungbv2.pubsub.client.app.ClientSubApp" -DclientName=<name> -DclientCredentical=<some_string> -DtopicName=<topicTest>
   -DgrpcBrokerHost=<localhost> -DgrpcBrokerPort=<portInNumber> -DjobPriority=<pritorityInNumber> -DjobIntervalInSecond=<numberSecond> -DschedulerDelayInSecond=<numberSecondDelay
 ```
-7. Start as many publishing and subcribing app as you want, remember to change clientName and clientCredentical.
+7. Start as many publishing and subcribing appa as you want, remember to change **clientName** and **clientCredentical**.
 
 ## Known Problems
 
