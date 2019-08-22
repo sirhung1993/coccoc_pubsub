@@ -17,7 +17,7 @@
 ## Quick Start Guide
 
 1. Clone the reposiry
-2. Set $PUB_SUB_HOME is project working dir 
+2. Set **$PUB_SUB_HOME** is project working dir 
 ```bash
     cd ./pubsubservice
     export PUB_SUB_HOME=$(pwd)
@@ -48,8 +48,14 @@ cd $PUB_SUB_HOME/client
 7. Start as many publishing and subcribing app as you want, remember to change clientName and clientCredentical.
 
 ## Known Problems
-1. Concurrency exception (temp fix by shallow copy)
-2. Race-condition could happen
-3. Memory limitation
-4. No clear and persist collection
 
+1. Concurrency exception (temp fix by shallow copy).
+2. Race-condition could happen.
+3. Memory limitation.
+4. No clear and persist collection.
+
+## Testing Environments
+
+* Ubuntu 18 (4.15.0-58-generic #64-Ubuntu)
+* openjdk version "1.8.0_222"
+* Apache Maven 3.6.0
