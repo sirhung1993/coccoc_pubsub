@@ -136,8 +136,7 @@ public class BrokerControllerImpl extends AbstractController implements BrokerCo
     String topicName = subcribeContent.getTopicName();
     int currentLength = 0;
     List<PubSubMessage> pubSubMessageList = null;
-    List<PubSubMessage> shallowCopy = new ArrayList<PubSubMessage>(messageInQueue.get(topicName));
-
+    List<PubSubMessage> shallowCopy = messageInQueue.containsKey(topicName) ? new ArrayList<PubSubMessage>(messageInQueue.get(topicName)) : new ArrayList<PubSubMessage>();
     boolean topicExist = subcriberByTopic.containsKey(topicName);
     if (topicExist) {
       int previousIndex = request.getQueueIndex() >= 0 ? request.getQueueIndex()
