@@ -24,10 +24,17 @@ public final class PubSubService {
   static {
     java.lang.String[] descriptorData = {
       "\n\023PubSubService.proto\022\030vn.coccoc.pubsub." +
-      "service\032\021PubSubModel.proto2p\n\021GrpcPubSub" +
-      "Service\022[\n\010subcribe\022\'.vn.coccoc.pubsub.m" +
-      "odel.SubcribeContent\032&.vn.coccoc.pubsub." +
-      "model.CommonResponseB\002P\001b\006proto3"
+      "service\032\021PubSubModel.proto2\214\003\n\021GrpcPubSu" +
+      "bService\022[\n\010subcribe\022\'.vn.coccoc.pubsub." +
+      "model.SubcribeContent\032&.vn.coccoc.pubsub" +
+      ".model.CommonResponse\022]\n\nunsubcribe\022\'.vn" +
+      ".coccoc.pubsub.model.SubcribeContent\032&.v" +
+      "n.coccoc.pubsub.model.CommonResponse\022[\n\n" +
+      "pubMessage\022%.vn.coccoc.pubsub.model.PubS" +
+      "ubMessage\032&.vn.coccoc.pubsub.model.Commo" +
+      "nResponse\022^\n\nsubMessage\022%.vn.coccoc.pubs" +
+      "ub.model.CommonRequest\032).vn.coccoc.pubsu" +
+      "b.model.ListPubSubMessageB\002P\001b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
